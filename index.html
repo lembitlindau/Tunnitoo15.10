@@ -1,25 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Hotellid Tallinnas</title>
     <meta charset="UTF-8">
+    <meta name="description" content="Hotellide loetelu Tallinnas koos kontaktinfoga.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h2 { color: darkblue; }
+    </style>
 </head>
 <body>
 
-<h2>Hotellid Tallinnas</h2>
-<p>Hotellid Kesklinnas:</p>
-<br>
-<ol>
-    <li>Radisson Blu Hotel Olümpia</li>
-    <li>Swissotel Tallinn</li>
-    <li>Hotel Palace</li>
-    <li>Hotel Telegraaf</li>
-    <li>Hotel Bern</li>
-    <br>
-    <p>Ühendust saab võtta:</p>
-    <p>Telefon: 50 12 345</p>
-    <p>E-mail: hotell@hotell.ee</p>
+<header>
+    <h1>Hotellide Loetelu</h1>
+</header>
 
+<main>
+    <section>
+        <article>
+            <h2>Hotellid Tallinnas</h2>
+            <p><mark>Hotellid Kesklinnas:</mark></p>
+            <blockquote cite="https://www.visittallinn.ee/">
+                "Tallinn pakub mitmeid luksuslikke majutusvõimalusi kesklinnas."
+            </blockquote>
+            <br>
+            <ol>
+                <li>Radisson Blu Hotel Olümpia</li>
+                <li>Swissotel Tallinn</li>
+                <li>Hotel Palace</li>
+                <li>Hotel Telegraaf</li>
+                <li>Hotel Bern</li>
+            </ol>
+        </article>
+
+        <article>
+            <h3>Kontakt</h3>
+            <address>
+                <p><strong>Ühendust saab võtta:</strong></p>
+                <p><abbr title="Telefoninumber">Tel:</abbr> 50 12 345</p>
+                <p><a href="mailto:hotell@hotell.ee">E-mail: hotell@hotell.ee</a></p>
+            </address>
+        </article>
+
+        <article>
+            <h3>Hotelli video</h3>
+            <video width="320" height="240" controls>
+                <source src="hotel_video.mp4" type="video/mp4">
+                Teie brauser ei toeta videot.
+            </video>
+        </article>
+
+        <article>
+            <h3>Muusika hotellis</h3>
+            <audio controls>
+                <source src="background_music.mp3" type="audio/mpeg">
+                Teie brauser ei toeta audiot.
+            </audio>
+        </article>
+
+        <article>
+            <h3>Lisainformatsioon</h3>
+            <details>
+                <summary>Vajuta, et näha rohkem infot</summary>
+                <p>Tallinna hotellid pakuvad erinevaid majutusvõimalusi, alates luksuslikest sviitidest kuni taskukohaste tubadeni.</p>
+            </details>
+        </article>
+
+        <article>
+            <h3>Hotelli broneeringu vorm</h3>
+            <form>
+                <fieldset>
+                    <legend>Broneeringu andmed</legend>
+                    <label for="nimi">Nimi:</label>
+                    <input type="text" id="nimi" name="nimi"><br><br>
+
+                    <label for="hotellid">Vali oma hotell:</label>
+                    <select id="hotellid" name="hotellid">
+                        <optgroup label="Kesklinna hotellid">
+                            <option value="radisson">Radisson Blu Hotel Olümpia</option>
+                            <option value="swissotel">Swissotel Tallinn</option>
+                            <option value="palace">Hotel Palace</option>
+                        </optgroup>
+                        <optgroup label="Vanakaarli hotellid">
+                            <option value="telegraaf">Hotel Telegraaf</option>
+                            <option value="bern">Hotel Bern</option>
+                        </optgroup>
+                    </select><br><br>
+
+                    <label for="kuupäev">Broneeringu kuupäev:</label>
+                    <input type="date" id="kuupäev" name="kuupäev"><br><br>
+
+                    <label for="lisainfo">Lisainfo:</label>
+                    <textarea id="lisainfo" name="lisainfo" rows="4" cols="50"></textarea><br><br>
+
+                    <button type="submit">Saada</button>
+                </fieldset>
+            </form>
+        </article>
+
+        <footer>
+            <p>Rohkem infot leiab siit: "Visit Tallinn"</p>
+            <nav>
+                <a href="https://www.visittallinn.ee/">This is a link</a>
+            </nav>
+            <p><figure>
+            <img src="pexels-magda-ehlers-pexels-1289845.jpg" alt="Tallinna Hotell" width="104" height="142">
+            <figcaption>Hotellide pilt Tallinnas</figcaption>
+        </figure>
+        </footer>
+
+        <section>
+            <table>
+                <caption>Hotellide kontaktandmed</caption>
+                <colgroup>
+                    <col style="background-color:#f2f2f2">
+                    <col style="background-color:#ffffff">
+                    <col style="background-color:#f2f2f2">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>Hotell</th>
+                    <th>Telefon</th>
+                    <th>E-mail</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Radisson Blu Hotel Olümpia</td>
+                    <td>50 12 345</td>
+                    <td><a href="mailto:olympia@hotell.ee">olympia@hotell.ee</a></td>
+                </tr>
+                <tr>
+                    <td>Swissotel Tallinn</td>
+                    <td>50 12 346</td>
+                    <td><a href="mailto:swissotel@hotell.ee">swissotel@hotell.ee</a></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="3">Hotellide kontaktandmed</td>
+                </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h3>Hotelli kaardistus</h3>
+            <map name="hotellikaart">
+                <area shape="rect" coords="34,44,270,350" alt="Hotell Olümpia" href="https://www.radissonhotels.com/en-us/hotels/radisson-blu-tallinn-olympia">
+            </map>
+            <img src="hotel_map.jpg" usemap="#hotellikaart" alt="Tallinna Hotellide Kaart">
+        </section>
+
+        <article>
+            <h3>Erilised lisad</h3>
+            <pre>
+                Broneerides enne 2025, saate lisaks:
+                - Tasuta hommikusöögi
+                - Tasuta saunapääsme
+            </pre>
+            <blockquote cite="https://www.hotell.ee">"Tasuta teenused kehtivad ainult eelbroneerijatele."</blockquote>
+            <ins>Uued eripakkumised lisanduvad iga kuu.</ins>
+        </article>
+
+        <article>
+            <h3>Kontaktvorm</h3>
+            <form>
+                <label for="email">Sisesta oma email:</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">Saada</button>
+            </form>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>Autoriõigus &copy; 2024 Tallinn Hotels.</p>
+</footer>
+
+<script>
+    console.log('Leht laaditud edukalt');
+</script>
 
 </body>
 </html>

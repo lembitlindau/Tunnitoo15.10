@@ -100,14 +100,16 @@
         </article>
 
         <footer>
-            <p>Rohkem infot leiab siit: "Visit Tallinn"</p>
+            <p>Rohkem infot leiab siit: <cite>"Visit Tallinn"</cite></p>
             <nav>
                 <a href="https://www.visittallinn.ee/">This is a link</a>
             </nav>
-            <p><figure>
-            <img src="pexels-magda-ehlers-pexels-1289845.jpg" alt="Tallinna Hotell" width="104" height="142">
-            <figcaption>Hotellide pilt Tallinnas</figcaption>
-        </figure>
+            <p>
+            <figure>
+                <img src="pexels-magda-ehlers-pexels-1289845.jpg" alt="Tallinna Hotell" width="104" height="142">
+                <figcaption>Hotellide pilt Tallinnas</figcaption>
+            </figure>
+            </p>
         </footer>
 
         <section>
@@ -171,6 +173,37 @@
                 <input type="email" id="email" name="email">
                 <button type="submit">Saada</button>
             </form>
+        </article>
+
+        <article>
+            <h3>Lisakomponendid</h3>
+            <p><kbd>CTRL</kbd> + <kbd>S</kbd>, et salvestada see lehekülg.</p>
+            <p>Koodinäide:</p>
+            <code>&lt;h1&gt;Hotellide loetelu&lt;/h1&gt;</code>
+            <hr>
+            <div>See on <strong>div</strong> element.</div>
+            <span>See on <strong>span</strong> element.</span>
+            <small>See on <strong>small</strong> tekst.</small>
+            <sub>Alamindeks</sub>
+            <sup>Ülaindeks</sup>
+            <samp>Näidis väljund tekst.</samp>
+            <dialog open>See on dialoogi kast.</dialog>
+            <canvas id="joonis" width="200" height="100" style="border:1px solid #000000;">Teie brauser ei toeta lõuendit.</canvas>
+            <template id="mall">
+                <p>See on mallikomponent.</p>
+            </template>
+            <picture>
+                <source srcset="tallinn_small.jpg" media="(max-width: 600px)">
+                <img src="tallinn.jpg" alt="Tallinna vaade">
+            </picture>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+            <ul>
+                <li>Hotell 1</li>
+                <li>Hotell 2</li>
+                <li>Hotell 3</li>
+            </ul>
         </article>
     </section>
 </main>
